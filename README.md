@@ -1,2 +1,5 @@
-# counter-astro
-Counter with astro, and ts
+# Counter for Web With Astro and TS
+
+
+   Modern Website with Counter
+ 

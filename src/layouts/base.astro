@@ -1,0 +1,27 @@
+---
+import '../global.css'
+
+const {
+	dark = true,
+	title = 'ergitodev',
+	description = 'Personal web',
+	image = 'https://media.discordapp.net/attachments/1128063121802666105/1128063164903346286/logoblue.png'
+} = Astro.props
+---
+<html lang='es' class:list={[{ 'bg-zinc-900': dark }, 'scroll-smooth']}>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width' />
+		<title>{title}</title>
+		<meta name='description' content={description} />
+		<link rel='icon' href='/favicon.png' type='image/svg+xml' />
+
+		<meta property='og:url' content='https://media.discordapp.net/attachments/1128063121802666105/1128063164903346286/logoblue.png' />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:image' content={image} />
+</head>
+	<body>
+		<slot />
+			</body>
+				</html>

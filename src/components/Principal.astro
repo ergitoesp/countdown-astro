@@ -1,0 +1,19 @@
+---
+import { Countdown } from '@components/Contador';
+---
+
+<div>
+	<div class='justify-center w-full pb-80 text-center text-black lg:pt-24'>
+		<div class='relative flex flex-col items-center w-full text-black'>
+			<span class='text-6xl font-black bg-clip-text text-transparent  bg-gradient-to-r from-orange-400 via-yellow-500 to-red-500'>@ergitodev</span>
+				<h4 class='text-sm tracking font-bold text-gray-900'>github.com/ergitoesp</h4>
+
+
+			<Countdown client:visible targetDate={new Date(1694620800000)} />
+
+			 <div class='pt-15 leading-9 text-center xl:pt-20'>
+				<a href="https://github.com/ergitoesp" class='text-4xl font-black bg-clip-text text-transparent bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'>This web is on maintenance!</a>
+			</div>
+		</div>
+	</div>
+</div>

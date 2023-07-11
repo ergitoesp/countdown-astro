@@ -1,8 +1,7 @@
 import { useRemainingTime } from '@hooks/tiempocontador'
 
 type Contador = {
-	targetDate: Date
-}
+	targetDate: Date }
 
 export const Countdown = ({ targetDate }: Contador) => {
 	const { days, hours, minutes, seconds, countdownEnded } = useRemainingTime(targetDate)
@@ -16,7 +15,7 @@ export const Countdown = ({ targetDate }: Contador) => {
 	return (
 		<>
 			<div class=' text-4xl mb-2 mt-10 font-bold opacity-70'>
-				{!countdownEnded ? 'New Project' : '✨✨✨✨✨'}
+				{!countdownEnded ? 'New Project' : '✨✨✨✨✨'} 
 			</div>
 			<section class='flex'>
 				{time.map(({ label, value }) => (
@@ -25,9 +24,9 @@ export const Countdown = ({ targetDate }: Contador) => {
 							{value}
 						</div>
 						<span class='text-black text-xl uppercase font-bold'>{label}</span>
-					</div>
-				))}
-			</section>
-		</>
-	)
-}
+					        </div>
+				              ))}
+				</section>
+			</>
+		)
+	}
